@@ -1,0 +1,21 @@
+.totalValor{
+
+    width: 333px;
+    height: 90px;
+    background-color: #E9ECEF ;
+    margin-top: 10px;
+    border-radius: 10px;
+    display:flex ;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 30px;
+    color: black;
+    font-size: 16px;
+}
+.campPrice{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+
+}

@@ -1,0 +1,69 @@
+.container {
+   display: flex;
+  align-items: flex-start;
+  background-color: #e9ecef;
+  width: 363px;
+  height: 300px;
+  padding-left: 15px;
+  gap: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.description {
+  width: 300px;
+  height: 50px;
+  padding: 0px 16px;
+  gap: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: none;
+}
+.valor {
+  width: 150px;
+  height: 50px;
+  padding: 0px 16px;
+  gap: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin-top: 5px;
+  border: none;
+}
+.divisao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  width: 143px;
+  height: 50px;
+  padding: 0px 16px;
+  gap: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 5px;
+  border: none;
+}
+.box {
+  height: 80px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container > button {
+  width: 336px;
+  height: 50px;
+  background-color: #fd377e;
+  color: white;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

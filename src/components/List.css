@@ -1,0 +1,33 @@
+.ContainerCards{
+    width: 600px;
+   
+}
+.campFiltro{
+
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.campFiltro >span{
+    margin-right: 150px;
+    font-weight: bold;
+
+}
+.filtro{
+    width: 90px;
+    height: 40px;
+    gap: 10px;
+    padding: 15px;
+    background-color: #e9eced;
+    border-radius: 8px;
+    border: none;
+}
+.divisao{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
