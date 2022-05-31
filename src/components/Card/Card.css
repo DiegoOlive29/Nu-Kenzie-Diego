@@ -1,0 +1,38 @@
+.card {
+  background-color: #f8f9fa;
+  width: 560px;
+  height: 87px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 15px;
+  border-left: solid #03b898 5px;
+}
+.description {
+  font-weight: bold;
+}
+
+.type {
+  width: 100%;
+}
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ofType {
+  background-color: #f8f9fa;
+  width: 560px;
+  height: 87px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 15px;
+  border-left: solid #e34981 5px;
+}
