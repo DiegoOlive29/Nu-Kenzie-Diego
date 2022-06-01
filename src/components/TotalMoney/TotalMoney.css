@@ -1,21 +1,40 @@
-.totalValor{
+.totalValor {
+  width: 95%;
+  height: 60px;
+  background-color: #e9ecef;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  color: black;
+  font-size: 1rem;
+}
+.campPrice {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
-    width: 333px;
+@media screen and (min-width: 760px) {
+  .totalValor {
+    width: 100%;
     height: 90px;
-    background-color: #E9ECEF ;
+    background-color: #e9ecef;
     margin-top: 10px;
     border-radius: 10px;
-    display:flex ;
+    display: flex;
     justify-content: space-between;
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 30px;
     color: black;
     font-size: 16px;
-}
-.campPrice{
+  }
+  .campPrice {
     color: black;
     font-size: 18px;
     font-weight: bold;
-
+  }
 }

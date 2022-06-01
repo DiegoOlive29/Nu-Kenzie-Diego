@@ -1,16 +1,17 @@
 .card {
   background-color: #f8f9fa;
-  width: 560px;
-  height: 87px;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
+  width: 95%;
+  height: 80px;
+  border-radius: 5px;
   margin-bottom: 10px;
+  display: flex;  
+  flex-direction: column;
   align-items: center;
-  padding: 15px;
+  justify-content: center;
   border-left: solid #03b898 5px;
 }
-.description {
+.descriptionCard {
+  width:50%;
   font-weight: bold;
 }
 
@@ -26,7 +27,49 @@
 }
 .ofType {
   background-color: #f8f9fa;
-  width: 560px;
+  width: 95%;
+  height: 80px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: solid #e34981 5px;
+}
+
+
+@media screen and (min-width: 760px) {
+.card {
+  background-color: #f8f9fa;
+  width: 90%;
+  height: 87px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 15px;
+  border-left: solid #03b898 5px;
+}
+.descriptionCard {
+  width:50%;
+  font-weight: bold;
+}
+
+.type {
+  width: 100%;
+}
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.ofType {
+  background-color: #f8f9fa;
+  width: 90%;
   height: 87px;
   border-radius: 4px;
   display: flex;
@@ -35,4 +78,5 @@
   align-items: center;
   padding: 15px;
   border-left: solid #e34981 5px;
+}
 }

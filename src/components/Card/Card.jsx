@@ -6,7 +6,7 @@ function Card(props){
         <>
         {props.transaction.type === "Entrada" ?(
         <div className="card">
-            <div className="title"><span className="description">{props.transaction.description }</span>
+            <div className="title"><span className="descriptionCard">{props.transaction.description }</span>
             <span>R$: {props.transaction.value }</span>
             <button  onClick={()=>props.handleTodo(props.transaction.id)}>Remove</button></div>
             
@@ -14,7 +14,7 @@ function Card(props){
         </div>)
         :(
             <div className="ofType">
-                <div className="title"><span className="description">{props.transaction.description }</span>
+                <div className="title"><span className="descriptionCard">{props.transaction.description }</span>
                 <span>R$: {props.transaction.value }</span>
                 <button  onClick={()=>props.handleTodo(props.transaction.id)}>Remove</button></div>
             

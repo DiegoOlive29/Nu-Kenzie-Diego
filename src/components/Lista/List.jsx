@@ -8,9 +8,9 @@ function List (props){
             
             <div className="campFiltro">
             <span>Resumo financeiro</span>
-            <button onClick={(event)=> event.target.style.background="#FD377E" } className="filtro">Todos </button>
-            <button onClick={(event)=> event.target.style.background="#FD377E"} className="filtro">Entrada</button>
-            <button onClick={(event)=> event.target.style.background="#FD377E"} className="filtro">Saída</button>
+            <button onClick={(event)=> props.filtroBTN(event.target.value) } className="filtro">Todos </button>
+            <button onClick={(event)=> props.filtroBTN(event.target.value) } className="filtro">Entrada</button>
+            <button onClick={(event)=> props.filtroBTN(event.target.value) } className="filtro">Saída</button>
             </div>
             <div className="divisao">
             {props.listTransactions.map((item,index)=>(

@@ -39,7 +39,11 @@ function FormDados(props) {
 
       <button
         onClick={() =>
-          type !== "" ? props.addTodo(description, type, value)  : ""
+          (type !== "" ? props.addTodo(description, type, value) : "")(
+            setDescription(""),
+            setType(""),
+            setValue("")
+          )
         }
       >
         Inserir Valor
