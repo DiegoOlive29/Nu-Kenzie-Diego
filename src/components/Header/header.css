@@ -25,7 +25,7 @@
   margin-right: 30px;
 }
 
-@media screen and ( min-width: 760px){
+@media screen and ( min-width: 1000px){
 .logo {
   color: #fd377e;
   margin-left: 30px;

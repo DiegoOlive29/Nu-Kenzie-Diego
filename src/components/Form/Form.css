@@ -3,6 +3,7 @@
   align-items: flex-start;
   background-color: #e9ecef;
   width: 95%;
+  max-width: 363px;
   height: 300px;
   box-sizing: border-box;
   padding: 10px;
@@ -21,7 +22,7 @@
   border: none;
 }
 .valor {
-  width: 150px;
+  width: 134px;
   height: 40px;
   padding: 0px 16px;
   background-color: #f8f9fa;
@@ -36,7 +37,7 @@
 }
 
 select {
-  width: 143px;
+  width: 140px;
   height: 40px;
   padding: 0px 16px;
   gap: 10px;
@@ -64,7 +65,7 @@ select {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1000px) {
   .container {
     display: flex;
     align-items: flex-start;

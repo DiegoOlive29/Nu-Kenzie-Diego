@@ -1,59 +1,40 @@
-import { useState , } from "react";
+import { useState } from "react";
 import HeaderJs from "./components/Header/Header";
 import FormDados from "./components/Form/Fom";
 import List from "./components/Lista/List";
 import TotalMoney from "./components/TotalMoney/TotalMoney";
-import Card from "./components/Card/Card";
-import "./App.css"
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import "./App.css";
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
-  const [id, setId] = useState(0);
-  let dados = listTransactions 
 
-  
-  function addTodo(description, type, value) {
-    if (type === "Saída") {
-      value = value * -1;
-    }
-    const newItem = {
-      description: description,
-      type: type,
-      value: value,
-      id: id,
-    };
+  const [filtrado, setFiltrado] = useState(false);
+  const [listFiltrada, setlistFiltrada] = useState([]);
 
-    setListTransactions([...listTransactions, newItem]);
-    setId(id + 1);
-  }
   function handleTodo(remove) {
     const novos = listTransactions.filter((item) => item.id !== remove);
     setListTransactions(novos);
-    dados =listTransactions
   }
 
   function filtroBTN(filtro) {
-   
-
     if (filtro === "Todos") {
-       dados = listTransactions
-    }else if ( filtro === "Saída"){
-      dados = listTransactions.filter ((item) => item.type === "Saída")
-    }else{
-      dados = listTransactions.filter ((item) => item.type === "Entrada")
-    
+      setFiltrado(false);
+      return [...listTransactions];
+    } else {
+      const listaFiltrada = [...listTransactions].filter(
+        (item) => item.type === filtro
+      );
+      return listaFiltrada;
     }
-
-    const list = listTransactions.filter((item) => item.type === filtro);
-    list.map((item, index) => (
-      <Card transaction={item} key={index} handleTodo={handleTodo} />
-    ));
-    console.log(dados);
   }
-  
+
   return (
     <>
-      <body>
+      <ToastContainer />
+      <div>
         <HeaderJs />
 
         <main className="containerMain">
@@ -61,20 +42,26 @@ function App() {
             <FormDados
               listTransactions={listTransactions}
               setListTransactions={setListTransactions}
-              addTodo={addTodo}
+              setFiltrado={setFiltrado}
+              listFiltrada={listFiltrada}
+              setlistFiltrada={setlistFiltrada}
             />
 
             <TotalMoney listTransactions={listTransactions} />
           </div>
 
           <List
-            listTransactions={dados}
+            listTransactions={listTransactions}
+            listaFiltrada={filtroBTN}
+            filtrado={filtrado}
+            setFiltrado={setFiltrado}
             handleTodo={handleTodo}
             filtroBTN={filtroBTN}
+            listFiltrada={listFiltrada}
+            setlistFiltrada={setlistFiltrada}
           />
-        
         </main>
-      </body>
+      </div>
     </>
   );
 }
